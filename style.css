@@ -38,6 +38,8 @@
 
      /* site max width */
      --site-max-width:1300px;
+
+     
 }
 
 html{
@@ -71,7 +73,7 @@ img{
 
 .section-title{
     text-align: center;
-    padding: 60px 0 100px;
+    padding: 60px 0 60px;
     text-transform: uppercase;
     font-size: var(--font-size-xl);
 }
@@ -231,7 +233,7 @@ img{
 
  .about-section .about-details .text{
     line-height: 30px;
-    margin: 50px 0 30px;
+    margin: 30px 0 30px;
     text-align: center;
     font-size: var(--font-size-m);
 }
@@ -256,13 +258,13 @@ img{
 .menu-section{
     color: var(--white-color);
     background:var(--dark-color);
-    padding: 50px 0 100px;
+    padding: 50px 0 80px;
 }
 
 .menu-section .menu-list{
     display: flex;
     flex-wrap: wrap;
-    gap: 110px;
+    gap: 60px;
     align-items: center;
     
 }
@@ -273,7 +275,7 @@ img{
     text-align: center;
     flex-direction: column;
     justify-content: space-between;
-    width: calc(100% / 3 - 110px);
+    width: calc(100% / 3 - 60px);
 }
 
 .menu-section .menu-list .menu-item .menu-image{
@@ -295,7 +297,8 @@ img{
 
 /* testimonial-section-styling */
 .testimonials-section{
-    padding: 50px 0 100px;
+    padding: 50px 0 80px;
+    background-color:var(--light-pink-color);
 }
 
 .testimonials-section .slider-wrapper{
@@ -350,7 +353,7 @@ img{
 
 /* gallery styling */
 .gallery-section{
-    padding: 50px 0 100px;
+    padding: 50px 0 80px;
 }
 
 .gallery-section .gallery-list{
@@ -378,7 +381,7 @@ img{
 
 /*contact us section styling */
 .contact-section{
-    padding: 50px 0 100px;
+    padding: 50px 0 80px;
     background: var(--light-pink-color);
 
 }
@@ -505,6 +508,17 @@ img{
     --font-size-xxl: 1.8rem;
     }
 
+    .section-title{
+        padding: 40px 0 40px;
+    }
+
+    .menu-section,
+    .testimonials-section,
+    .gallery-section,
+    .contact-section {
+        padding: 30px 0 60px;
+    }
+
     body.show-mobile-menu header::before{
         content: "";
         position: fixed;
@@ -592,7 +606,7 @@ img{
     }
 
     .menu-section .menu-list{
-        gap: 30px;
+        gap: 40px;
         
     }
 
@@ -604,7 +618,7 @@ img{
         max-width: 200px;
     }
 
-    .gallery-section .gallery-list .gallery-item{
+    .gallery-section .gallery-list {
         gap: 30px;
     }
 
